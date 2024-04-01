@@ -1,6 +1,7 @@
 import dash
 from dash import register_page, html, callback, Input, Output, State
 import dash_bootstrap_components as dbc
+from modulos.entrada_receitas import nova_receita_modal
 
 
 register_page(__name__, path="/receitas", title="Receitas")
@@ -21,7 +22,7 @@ layout = html.Div(
             is_open=False,
             children=[
                 dbc.ModalHeader(dbc.ModalTitle("Inserir nova Receita")),
-                dbc.ModalBody("This is the content of the modal"),
+                dbc.ModalBody(nova_receita_modal),
                 
             ],
            
