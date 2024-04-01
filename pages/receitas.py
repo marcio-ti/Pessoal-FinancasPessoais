@@ -9,9 +9,6 @@ register_page(__name__, path="/receitas", title="Receitas")
 layout = html.Div(
     children=[
         dbc.Button("Nova Receita", id="open", n_clicks=0),
-        
-        
-        
         # ------------------------------------------------------------------------------- #
         # MODAIS #
         # ------------------------------------------------------------------------------- #
@@ -23,11 +20,10 @@ layout = html.Div(
             children=[
                 dbc.ModalHeader(dbc.ModalTitle("Inserir nova Receita")),
                 dbc.ModalBody(nova_receita_modal),
-                
             ],
-           
         ),
-])
+    ]
+)
 
 
 @callback(
