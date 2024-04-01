@@ -51,6 +51,21 @@ app.layout = html.Div(children=[
                     
                     dbc.NavLink(
                         children=[
+                                html.Img(src="assets/img/bank.png", height=30, width=30)
+                            ], 
+                        href="/contas", 
+                        active="exact",className='mb-2'),
+                    
+                    dbc.NavLink(
+                        children=[
+                                html.Img(src="assets/img/investment.png", height=30, width=30)
+                            ], 
+                        href="/investimentos", 
+                        active="exact",className='mb-2'),
+                    
+                    
+                    dbc.NavLink(
+                        children=[
                             html.Img(src="assets/img/settings.png", height=30, width=30)
                         ], 
                         href="/configuracoes", 
